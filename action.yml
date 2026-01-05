@@ -1,8 +1,8 @@
-name: tai-kun/semver-parser
-description: セマンティックバージョニング（Semver）を解析します
+name: Parse SemVer
+description: セマンティックバージョニング（SemVer）を解析します
 inputs:
   version:
-    description: 解析対象の Semver 文字列
+    description: 解析対象の SemVer 文字列
     required: true
   safe-parse:
     description: 無効な文字列が入力されたとき、エラーで終了せずに outputs.version が空文字列になります
@@ -10,7 +10,7 @@ inputs:
     default: "false"
 outputs:
   version:
-    description: 解析・検証済みの Semver 文字列
+    description: 解析・検証済みの SemVer 文字列
   major:
     description: メジャーバージョンの値
   minor:
