@@ -1,4 +1,4 @@
-name: セマンティックバージョニングを解析
+name: 235139d9-91d1-4a5f-9c10-8a091a3a286e
 description: セマンティックバージョニング（SemVer）を解析します
 inputs:
   version:
