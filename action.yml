@@ -1,4 +1,4 @@
-name: Semver Parser
+name: tai-kun/semver-parser
 description: セマンティックバージョニング（Semver）を解析します
 inputs:
   version:
