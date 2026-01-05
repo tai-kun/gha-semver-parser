@@ -1,0 +1,18 @@
+[tools]
+node = "24"
+
+[tasks.update]
+run = [
+    "npx npm-check-updates --target minor -u --cooldown 3",
+    "npm install",
+    "npm audit",
+]
+
+[tasks.build]
+run = [
+    "npx tsc",
+    "cp package-lock.json dist/package-lock.json",
+    "cp package.json dist/package.json",
+    "cd dist && npm ci --omit=dev",
+    "rm dist/package-lock.json dist/package.json",
+]

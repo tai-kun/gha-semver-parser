@@ -1,0 +1,26 @@
+name: Semver Parser
+description: セマンティックバージョニング（Semver）を解析します
+inputs:
+  version:
+    description: 解析対象の Semver 文字列
+    required: true
+  safe-parse:
+    description: 無効な文字列が入力されたとき、エラーで終了せずに outputs.version が空文字列になります
+    required: false
+    default: "false"
+outputs:
+  version:
+    description: 解析・検証済みの Semver 文字列
+  major:
+    description: メジャーバージョンの値
+  minor:
+    description: マイナーバージョンの値
+  patch:
+    description: パッチバージョンの値
+  prerelease:
+    description: プレリリースの構成要素（結合済み）
+  build:
+    description: ビルドメタデータの構成要素（結合済み）
+runs:
+  using: node24
+  main: dist/main.js

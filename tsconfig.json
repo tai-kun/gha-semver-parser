@@ -1,0 +1,23 @@
+{
+  "extends": [
+    "@tsconfig/node24",
+    "@tsconfig/strictest"
+  ],
+  "include": [
+    "./src/**/*"
+  ],
+  "compilerOptions": {
+    "types": [
+      "node"
+    ],
+    "lib": [
+      "ESNext"
+    ],
+    "noEmit": false,
+    "outDir": "./dist",
+    "target": "es2020",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "erasableSyntaxOnly": true
+  }
+}
