@@ -1,6 +1,5 @@
 import * as core from "@actions/core";
-// @ts-expect-error
-import semverParse from "semver/functions/parse";
+import semverParse from "semver/functions/parse.js";
 try {
     const safeParse = core.getBooleanInput("safe-parse");
     const version = core.getInput("version", { required: true });
